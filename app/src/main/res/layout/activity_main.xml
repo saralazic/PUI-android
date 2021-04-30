@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/purple"
+    android:orientation="vertical">
+    <include layout="@layout/header" />
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="615dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bckgrnd"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="70dp"
+            android:fontFamily="serif"
+            android:text="Korisničko ime:"
+            android:textColor="@color/brown"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_weight="1"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="70dp"
+            android:fontFamily="serif"
+            android:text="Lozinka:"
+            android:textColor="@color/brown"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="sans-serif"
+            android:text="Uloguj se"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:onClick="login"/>
+        <TextView
+            android:id="@+id/err"
+            android:layout_width="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="70dp"
+            android:fontFamily="serif"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </GridLayout>
+</RelativeLayout>

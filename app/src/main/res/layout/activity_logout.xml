@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical">
+    <include layout="@layout/header" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bckgrnd"
+        android:orientation="vertical">
+
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_brown"
+                android:drawableLeft="@drawable/ic_cart_brown"
+                android:onClick="goToHomePage"
+                android:src="@drawable/ic_home_brown" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_brown"
+                android:onClick="goToCartPage"
+                android:src="@drawable/ic_cart_brown"></ImageButton>
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_brown"
+                android:onClick="goToNotifPage"
+                android:src="@drawable/ic_notif_brown" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_brown"
+                android:onClick="goToDataPage"
+                android:src="@drawable/ic_data_brown" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_brown"
+                android:src="@drawable/ic_logout_purple" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="sans-serif"
+            android:onClick="logout"
+            android:text="Izloguj se"
+            android:textAllCaps="false"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+    </GridLayout>
+
+</RelativeLayout>
